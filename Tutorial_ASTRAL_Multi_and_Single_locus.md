@@ -100,28 +100,38 @@ Especie: individuo1,individuo2
 
 
 ```
-aristata: aris02S1,aris05S2
-bungeana: bung03s3A
-californiarum: caliBC01
-cembroides: cemdCHI01,cemdHGO,cemdSLP01
-culminicola: culmCOA01,culmCOA02,culmNL01,culmNL02
-discolor: discARI01,discARI02,discSON01
-edulis: edulUTAH01,edulUTAH02,edulUTAH03
-fallax: fallUTAH01,fallUTAH02
-gerardiana: gera01S1
-johannis: johaSLP01,johaZAC01,johaZAC02
-krempfii: krem03N12
-lagunae: laguBCS01,laguBCS02
-lambertiana: lamb1195
-longaeva: longUTAH01
-maximartinezii: maxtZAC01,maxtZAC02,maxtZAC03
-monophylla: monoCAL01,monoUSA01,monoUTAH02,caliCAL01,caliCAL03,caliCAL04,caliCAL05
-nelsonii: nelsNL01,nelsSLP01,nelsTAM01
-orizabensis: orizPUE01
-pinceana: pincCOA01,pincSLP01
-quadrifolia: quadBC01,quadBC02,quadBC03,quadBC04,quadBC05,quadBC06
-remota: remoCOA01,remoCOA02,remoCOA03,remoCOA04,remoNL01
-rzedowskii: rzedMICH01,rzedMICH02,rzedMICH03,rzedMICH04
+attenuata: atteAL04,atteJPR185
+chihuahuana: chihDSG786,chihDSG789,chihDSG106
+cubensis: cubeAL01
+devoniana: devoDSG721
+douglasiana: dougDSG105
+echinata: echiDOB129,echiSNa02
+elliottii: elliDSG940,elliDSG944,elliAL04,elliAL05
+georginae: georSHL08,georSHL09
+glabra: glabJS1948,glabJS1952,glabMHA419
+greggii: gregDSG132,gregDSG138,gregDSG130,gregDSG133,gregDSG136
+herrerae: herrDSG634,herrDSG750,herrDSG106
+jaliscana: jaliDSG456,jaliSHL11
+lawsonii: lawsDSG108,lawsJPR184,lawsJCS213
+leiophylla: leioDSG879,leioDRD40,leioDSG767,leioDSG794
+longipedunculata: longDGpa5,longDSG139
+lumholtzii: lumhRG545,lumhDSG107,lumhRG510
+luzmariae: luzmDSG740,luzmDSG116
+muricata: muriDSG966,muriDSG968
+occidentalis: occiLJB2
+oocarpa: oocaDSG560,oocaDSG646,oocaDSG726,oocaDSG711
+palustris: paluDG3915
+patula: patuDSG137,patuDSG144,patuDSG132
+praetermissa: praeDSG454,praeDSG455,praeJPR183
+pringlei: prinJPR183,prinDSG645
+pungens: pungAL01,pungRB
+radiata: radiDG2241,radiDOB104
+rigida: rigiAL02,rigiDG3891,rigiDG3895,rigiRB
+serotina: seroDOB129
+taeda: taed
+tecunumanii: tecuDSG895,tecuDSG896
+teocote: teocDSG140,teocDSG540,teocDSG814
+
 ```
 
 **Nota**: Debes dejar un especio después de los dos puntos.
