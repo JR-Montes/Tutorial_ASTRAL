@@ -2,10 +2,11 @@
 ___
 
 by David S. Gernandt and Rubén Montes
+
 Versión 06 de Marzo de 2019
 --
 
-**Objetico**
+**Objetivo**
 
 Realizar análisis de máxima verosimilitud a partir de alineamientos múltiples mediante un script para RAxML.
 Combinar los mejores árboles en un sólo archivo.
