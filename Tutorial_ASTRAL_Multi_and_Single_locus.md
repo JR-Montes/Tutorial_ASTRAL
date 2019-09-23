@@ -134,13 +134,21 @@ teocote: teocDSG140,teocDSG540,teocDSG814
 
 ```
 
-**Nota**: Debes dejar un especio después de los dos puntos.
+**Nota**: No debes dejar un especio después de los dos puntos.
 
 Ejecuta la siguiente línea de comandos:
 
 ```
 java -jar ./astral.5.5.9.jar -i alltrees.tre -a multi-individual.txt -o Australes_n339_allRAxML_Astral_multind.tre 2>Australes_n339_multiind.out.txt
 ```
+
+**Calcular probabilidades posteiores**
+
+```
+java -jar ./astral.5.5.9.jar -i alltrees.tre -t 1 -a multi-individual.txt -o Australes_n339_allRAxML_Astral_multind.tre 2>Australes_n339_multiind.out.txt
+```
+
+**Nota**: Si quieres agregar los posterior probabilidades, cambia la opción a -t 3. De todas formas, creo que esta es la opción por defecto. En el tutorial los autores[ASTRAL-tutorial](https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md#running-astral)  mencionan que ayuda proporcionar un archivo con los árboles de bootstrap también. Esto es recomendable. Así puedes colapsar ramas en el mejor árbol de máxima verosimilitud que tienen un valor de bootstrap <10%.
 
 
 **Apéndice**
