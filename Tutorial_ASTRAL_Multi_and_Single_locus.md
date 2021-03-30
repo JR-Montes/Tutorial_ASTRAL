@@ -151,6 +151,28 @@ java -jar ./astral.5.5.9.jar -i alltrees.tre -t 1 -a multi-individual.txt -o Aus
 **Nota**: Si quieres agregar los posterior probabilidades, cambia la opción a -t 3. De todas formas, creo que esta es la opción por defecto. En el tutorial los autores[ASTRAL-tutorial](https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md#running-astral)  mencionan que ayuda proporcionar un archivo con los árboles de bootstrap también. Esto es recomendable. Así puedes colapsar ramas en el mejor árbol de máxima verosimilitud que tienen un valor de bootstrap <10%.
 
 
+**Calular los factores de concordancia de los árboles de genes**
+
+Los factores de concordancia de genes (gCF) cuantifican la proporción de árboles en conflicto y cocordantes de conjunto de árboles de genes que contienen un nodo particular de un árbol de referencia proporcionado por el usuario. ASTRAL nos dice cuanto ILS exite en nuestros datos. Dicho de otra manera,ASTRAL proprociona una valor que nos indica de manera general el número de árboles de genes compatibles de todo el conjunto de árboles de genes. Además, nos proporciona un árbol con longitudes de rama que indican unidades coalescente pero no sabemos cuántos árboles son compatibles o no por cada nodo. Para solucionar ese problema, los factores de concordancia nos porporcionan esa información. Para calcular los gCF utilizamo el programa IQTREE. Los archivos de entrada son el árbol de especies de ASTRAL `Australes_n339_multiind.tre` y el archivo con todos los árboles de RAxML `alltrees.tre`
+
+Ejecuta la siguiente línea de comandos:
+
+```
+iqtree Australes_n339_multiind.tre --gcf alltrees.tre --prefix gene_concordance
+
+```
+
+El programa proporcionará 5 archivos de salida. El archivo que debes abrir en FigTree para ver los valores de gCF es:
+
+```
+gene_concordance.cf.tree
+
+```
+
+Los primeros valores son las probabilidades posteriores que fueron calculadas por ASTRAL y los segundos valores después de las barras diagonales son los factores de concordancia calculados por IQ-TREE a partir del conjunto de árboles genéticos. Los valores de gCF pueden correlacionarse con las probabilidades posteriores de ASTRAL, pero generalmente tienden a ser más bajos. A pesar de que ASTRAL estima probabilidades posteriores cercanas a 1 y los gCF menores a 50% no es necesariamente una contradicción, ya que se espera que el sorteo incompleto de linaje explicado por ASTRAL, lleve a un desacuerdo entre el árbol de especies y los árboles de genes, particularmente para especies que divergen rápidamente.
+
+
+
 **Apéndice**
 
 Para instalar ASTRAL en una máquina LINUX o UNIX:
